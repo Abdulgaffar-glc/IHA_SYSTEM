@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+import time
 camera = cv2.VideoCapture(0)
 while True:
     ret, resim = camera.read()
