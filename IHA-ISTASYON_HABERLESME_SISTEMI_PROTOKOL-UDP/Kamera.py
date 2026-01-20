@@ -22,7 +22,7 @@ while True:
             x1, y1, x2, y2 = map(int, kutu.xyxy[0])
             nesne_id = int(kutu.cls[0])
             guven = kutu.conf[0]
-            if nesne_id == 73:
+            if nesne_id == 0:
                 bulundu = True
                 cv2.rectangle(resim, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 cv2.putText(resim, f"Book: {guven:.2f}, Nesne ID: {nesne_id}", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
